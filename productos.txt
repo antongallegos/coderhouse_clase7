@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Polera de Bob Esponja",
+    "price": 123.45,
+    "photo": "https://media.giphy.com/media/AL10PPC3eZhxC/giphy.gif"
+  },
+  {
+    "title": "Polera de Bart Simpson",
+    "price": 234.56,
+    "photo": "https://media.giphy.com/media/26tPplGWjN0xLybiU/giphy.gif"
+  },
+  {
+    "title": "Polera de Pluto",
+    "price": 345.67,
+    "photo": "https://media.giphy.com/media/SI6rTjsXIYJOM/giphy.gif"
+  }
+]

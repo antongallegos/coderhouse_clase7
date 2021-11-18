@@ -6,8 +6,8 @@ class Carrito {
     this.carrito = carrito;
   }
 
-  addCarrito(producto) {
-    this.carrito.push(producto);
+  addCarrito(carrito) {
+    this.carrito.push(carrito);
   }
 
   getById(numero) {
@@ -19,7 +19,12 @@ class Carrito {
   }
 
   deleteById(numero) {
-    this.carrito.pop[numero - 1];
+    //this.carrito.pop[numero - 1];
+    for (let i = 0; i < this.carrito.length; i++) {
+      if (this.carrito[i].id == numero) {
+        break;
+      }
+    }
     return this.carrito;
   }
 
@@ -86,7 +91,7 @@ class Carrito {
         }
       }; */
 
-  saveProd = async (productos) => {
+  saveCarrito = async (productos) => {
     const arrCarrito = this.getAll();
     try {
       await fs.promises.writeFile(
@@ -99,26 +104,6 @@ class Carrito {
   };
 }
 
-p = new Carrito();
-
-/* p.addProducto(
-      "Escuadra",
-      123.45,
-      "https://cdn3.iconfinder.com/data/icons/education-209/64/ruler-triangle-stationary-school-256.png"
-    );
-    p.addProducto(
-      "Calculadora",
-      234.56,
-      "https://cdn3.iconfinder.com/data/icons/education-209/64/calculator-math-tool-school-256.png"
-    );
-    p.addProducto(
-      "Globo Terráqueo",
-      345.67,
-      "https://cdn3.iconfinder.com/data/icons/education-209/64/globe-earth-geograhy-planet-school-256.png"
-    ); */
-
-//let productos = p.getAll();
-//p.crearArchivo();
-//p.saveProd(productos);
+p = new Carrito([]);
 
 module.exports = Carrito;

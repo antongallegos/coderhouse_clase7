@@ -31,10 +31,10 @@ router.post("/", (req, res) => {
   d.leerArchivo();
   let title = req.body.title;
   let price = req.body.price;
-  let th = req.body.th;
-  d.addProducto(title, price, th);
+  let ph = req.body.ph;
+  d.addProducto(title, price, ph);
   d.saveProd(d.getAll());
-  res.redirect("/productos");
+  res.redirect("/");
 });
 /*put*/ //modificar a que busque el producto id y modifique los datos /:title/:price/:th
 router.put("/:id", (req, res) => {
@@ -47,8 +47,8 @@ router.put("/:id", (req, res) => {
   } else {
     let title = req.params.title;
     let price = req.params.price;
-    let th = req.params.th;
-    let a = d.productos[id].addProducto(title, price, th);
+    let ph = req.params.ph;
+    let a = d.productos[id].addProducto(title, price, ph);
     d.saveProd(a);
     res.json(a);
   }

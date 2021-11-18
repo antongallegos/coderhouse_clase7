@@ -2,8 +2,6 @@ const fs = require("fs");
 const { resolve } = require("path");
 
 class Producto {
-  //productos = Array();
-
   constructor(productos) {
     this.productos = productos;
   }
@@ -106,9 +104,9 @@ class Producto {
   };
 }
 
-p = new Producto();
+p = new Producto([]);
 
-p.addProducto(
+/* p.addProducto(
   "Polera de Bob Esponja",
   123.45,
   "https://media.giphy.com/media/AL10PPC3eZhxC/giphy.gif"
@@ -122,10 +120,10 @@ p.addProducto(
   "Polera de Pluto",
   345.67,
   "https://media.giphy.com/media/SI6rTjsXIYJOM/giphy.gif"
-);
+); */
 
-let productos = p.getAll();
+/* let productos = p.getAll();
 p.crearArchivo();
-p.saveProd(productos);
+p.saveProd(productos); */
 
 module.exports = Producto;
