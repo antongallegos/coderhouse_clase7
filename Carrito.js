@@ -10,8 +10,23 @@ class Carrito {
     this.carrito.push(carrito);
   }
 
+  addProducto(numero, product) {
+    let t = [];
+    t = this.carrito[numero]["productos"];
+    this.carrito[numero]["productos"] = [];
+    t.push(product);
+    this.carrito[numero]["productos"] = t;
+  }
+
   getById(numero) {
-    return this.carrito[numero - 1];
+    //return this.carrito[numero - 1];
+    for (let i = 0; i < this.carrito.length - 1; i++) {
+      console.log(this.carrito[i]);
+      if (this.carrito[i].id == numero) {
+        return i;
+      }
+    }
+    return "carrito no encontrado";
   }
 
   getAll() {
@@ -19,13 +34,26 @@ class Carrito {
   }
 
   deleteById(numero) {
-    //this.carrito.pop[numero - 1];
-    for (let i = 0; i < this.carrito.length; i++) {
+    this.carrito.pop[numero - 1];
+    /* for (let i = 0; i < this.carrito.length - 1; i++) {
       if (this.carrito[i].id == numero) {
-        break;
+        return this.carrito;
+      }
+    } */
+    return this.carrito;
+  }
+
+  deleteProductById(numeroC, numeroP) {
+    for (let i = 0; i < this.carrito.length - 1; i++) {
+      if (this.carrito[i].id == numeroC) {
+        for (let e = 0; i < this.carrito[i].productos.length - 1; i++) {
+          if (this.carrito[i].productos[e].id == numeroP) {
+            this.carrito[i].pop(productos[e]);
+          }
+        }
+        return this.carrito;
       }
     }
-    return this.carrito;
   }
 
   deleteAll() {

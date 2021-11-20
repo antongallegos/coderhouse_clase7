@@ -1,17 +1,62 @@
 [
   {
-    "title": "Polera de Bob Esponja",
-    "price": 123.45,
-    "photo": "https://media.giphy.com/media/AL10PPC3eZhxC/giphy.gif"
+    "id": 1,
+    "timestamp": 1637362143829,
+    "nombre": "Polera de Bob Esponja",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+    "codigo": 234858534,
+    "foto": "https://media.giphy.com/media/AL10PPC3eZhxC/giphy.gif",
+    "precio": 123.45,
+    "stock": 3
   },
   {
-    "title": "Polera de Bart Simpson",
-    "price": 234.56,
-    "photo": "https://media.giphy.com/media/26tPplGWjN0xLybiU/giphy.gif"
+    "id": 2,
+    "timestamp": 1637362143829,
+    "nombre": "Polera de Bob Esponja",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+    "codigo": 234858534,
+    "foto": "https://media.giphy.com/media/AL10PPC3eZhxC/giphy.gif",
+    "precio": 123.45,
+    "stock": 3
   },
   {
-    "title": "Polera de Pluto",
-    "price": 345.67,
-    "photo": "https://media.giphy.com/media/SI6rTjsXIYJOM/giphy.gif"
+    "id": 3,
+    "timestamp": 1637362143830,
+    "nombre": "Polera de Bart Simpson",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+    "codigo": 2344534,
+    "foto": "https://media.giphy.com/media/26tPplGWjN0xLybiU/giphy.gif",
+    "precio": 234.56,
+    "stock": 2
+  },
+  {
+    "id": 4,
+    "timestamp": 1637362143830,
+    "nombre": "Polera de Bart Simpson",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+    "codigo": 2344534,
+    "foto": "https://media.giphy.com/media/26tPplGWjN0xLybiU/giphy.gif",
+    "precio": 234.56,
+    "stock": 2
+  },
+  {
+    "id": 5,
+    "timestamp": 1637362143830,
+    "nombre": "Polera de Pluto",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+    "codigo": 2344534,
+    "foto": "https://media.giphy.com/media/SI6rTjsXIYJOM/giphy.gif",
+    "precio": 345.67,
+    "stock": 8
+  },
+  {
+    "id": 6,
+    "timestamp": 1637362143830,
+    "nombre": "Polera de Pluto",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+    "codigo": 2344534,
+    "foto": "https://media.giphy.com/media/SI6rTjsXIYJOM/giphy.gif",
+    "precio": 345.67,
+    "stock": 8
   }
 ]
